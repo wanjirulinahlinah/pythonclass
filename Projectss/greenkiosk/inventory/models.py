@@ -1,8 +1,7 @@
 from django.db import models
 from vendor.models import Vendor
-from cart.models import Cart
+from cart .models import Cart
 class Product(models.Model):
-    vendor = models.ForeignKey(Vendor, null=True, on_delete=models.CASCADE)
     cart = models.ManyToManyField(Cart)
     name = models.CharField(max_length=32)
     price = models.DecimalField(max_digits=8, decimal_places=2)
