@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'reviews',
     'delivery',
     'store',
-    'grocery',
     'vendor'
     
 ]
